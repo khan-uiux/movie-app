@@ -9,15 +9,13 @@ import Login from './pages/Login'
 
 function App() {
 
-  const {handleCategory} = useContext(MovieContext)
-
   return (
     <>
       <div className="content relative bg-[#010208]">
         <Navbar />
       </div>
       <Routes>
-        <Route path='/home' element = {<Home />} />
+        <Route path='/' element = {<Home />} />
         <Route path='/top-rated' element = {<TopRated />} />
         <Route path='/popular' element = {<TopRated />} />
         <Route path='/upcoming' element = {<TopRated />} />

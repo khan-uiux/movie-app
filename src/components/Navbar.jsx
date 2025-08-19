@@ -8,7 +8,7 @@ function Navbar() {
     const {handleCategory} = useContext(MovieContext)
 
     const categories = [
-        {path : '/', lable : 'Home', type : 'now_playing'},
+        {path : '/home', lable : 'Home', type : 'now_playing'},
         {path : '/popular', lable : 'Popular', type : 'popular'},
         {path : '/top-rated', lable : 'Top Rated', type : 'top_rated'},
         {path : '/upcoming', lable : 'Upcoming', type : 'upcoming'},
@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center md:w-[100%] w-100">
-        <Link to='/'> <img src={Logo} alt="nav-logo" className="md:w-24 w-16 cursor-pointer" /> </Link>
+        <Link to='/home'> <img src={Logo} alt="nav-logo" className="md:w-24 w-16 cursor-pointer" /> </Link>
         <div className="links">
             <ul className='nav-ul flex gap-4'>
                 { categories.map((cat, index) => {

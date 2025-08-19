@@ -17,7 +17,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-        <Route path='/' element = {<Home />} />
+        <Route path='/home' element = {<Home />} />
         <Route path='/top-rated' element = {<TopRated />} />
         <Route path='/popular' element = {<TopRated />} />
         <Route path='/upcoming' element = {<TopRated />} />

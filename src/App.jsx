@@ -3,8 +3,6 @@ import './index.css'
 import Home from './pages/Home'
 import TopRated from './pages/TopRated'
 import Navbar from './components/Navbar'
-import { useContext } from 'react'
-import { MovieContext } from './Context/MovieContext'
 import Login from './pages/Login'
 
 function App() {

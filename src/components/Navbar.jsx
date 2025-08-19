@@ -8,7 +8,7 @@ function Navbar() {
     const {handleCategory} = useContext(MovieContext)
 
     const categories = [
-        {path : '/home', lable : 'Home', type : 'now_playing'},
+        {path : '/', lable : 'Home', type : 'now_playing'},
         {path : '/popular', lable : 'Popular', type : 'popular'},
         {path : '/top-rated', lable : 'Top Rated', type : 'top_rated'},
         {path : '/upcoming', lable : 'Upcoming', type : 'upcoming'},
